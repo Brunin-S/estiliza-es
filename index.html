@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Work Sans", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #4e89e8, #ffffff);
+        }
+
+        body, html {
+            height: 100%; /* Definir a altura do corpo e do HTML como 100% */
+            margin: 0; /* Remover margens padrão */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid black;
+            max-width: 300px;   
+            margin-bottom: 20px;
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            align-items: center;
+            margin: auto; /* Centralizar horizontalmente */
+            margin-top: calc(50vh - 200px); /* Centralizar verticalmente */
+            background: linear-gradient(to bottom, #87CEEB, #ffffff); /* Cor de fundo complementar */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+        }
+
+        .container .inputs {
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-radius: 3px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+
+        .login {
+            margin-bottom: 10px;
+            text-decoration: none;
+            border: 1px solid black;
+            color: black;
+            border-radius: 20px;
+            max-width: 100px;
+            padding: 7px;
+        }
+
+        .cadastro {
+            text-decoration: none;
+            border: 1px solid black;
+            color: black;
+            border-radius: 20px;
+            max-width: 100px;
+            padding: 7px;
+        }
+
+        .title {
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Login</h1>
+    </div>
+    <!-- {% if mensagem %}
+    <p>{{ mensagem }}</p>
+    {% endif %} -->
+    <div class="container">
+    <form action="/" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required class="inputs"><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required class="inputs"><br>
+        <input type="submit" value="Login" class="login">
+    </form>
+    <a href="cadastro.html" class="cadastro">Cadastre-se</a>
+</div>
+</body>
+</html>
